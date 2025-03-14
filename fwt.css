@@ -1,0 +1,40 @@
+html {
+	background-color: #2c3e50; /* Fallback color matching the image */
+}
+
+body {
+	position: relative;
+	margin: 0;
+	min-height: 100vh;
+	background: none;
+	color: white;
+	font-family: "poppins";
+}
+
+body::before {
+	content: "";
+	position: absolute;
+	top: -10px;
+	left: -10px;
+	right: -10px;
+	bottom: -10px;
+	background-image: url("bg.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	filter: blur(5px);
+	z-index: -1;
+}
+
+.header {
+	text-align: center;
+	padding: 10px 20px 6px 20px;
+}
+
+.header h1 {
+	font-size: 1.4rem;
+	margin-bottom: -20px;
+}
+.header h5 {
+	color: burlywood;
+}
